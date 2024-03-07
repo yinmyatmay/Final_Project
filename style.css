@@ -39,10 +39,10 @@ li {
 }
 
 #sidebar {
-    max-width: 264px;
-    min-width: 264px;
+    max-width: 250px;
+    min-width: 240px;
     transition: all 0.35s ease-in-out;
-    box-shadow: 0 0 35px 0 rgba(49, 57, 66, 0.5);
+   
     z-index: 1111;
 }
 
@@ -118,70 +118,66 @@ a.sidebar-link {
 }
 
 /* search */
-.search{
+.search mt-3 d-flex{
     
     width: 400px;
     margin: 0 10px ;
+    border-radius: 50%;
 
 }
 .search label{
     position: relative;
     width: 100%;
 }
+.form-control {
+    color: aqua;
+}
 .search label input{
    
-    height: 40px;
+    
     border: 1px solid;
     outline: none;
     padding: 5px 20px;
     
 }
 /* Cards */
-.cardBox{
-    position: relative;
-    width: 100%;
-    padding: 20px;
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    grid-gap:30px;
+ .cardBox{
+ 
+    
 }
 .cardBox .card{
     position: relative;
-    padding: 30px;
-    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.8);
-    display:flex;
-    justify-content: space-between;
-    cursor: pointer;
-    border-radius: 20px;
-}
-.cardBox .card .numbers{
-    position: relative;
+     padding: 30px; 
+    margin-bottom: 60px;
+    background-color: #353535;
+    
+} 
+  .cardBox .card .numbers{ 
+     position: relative;
     font-weight: 500;
     font-size: 2.5rem;
-    color:#FFD700;
-}
-.cardBox .card .numbers .cardName{
+    color:black;
+}  
+ .cardBox .card .numbers .cardName{
     margin-top: 5px;
     font-size: 1.1em;
-    color:var(--black2);
     margin-top: 5px;
-}
-.cardBox .card .iconBox{
-    display: flex;
-    justify-content: space-between;
-    font-size: 1.5rem;
-    margin-top: 5px;
-    color:rgb(112, 107, 107)
-}
+} 
+ 
+     
 .cardBox .card:hover{
-    background:#FFD700;
-}
+    background:rgb(202, 197, 58);
+    color: #d1d9e1;
+}  
 .cardBox .card:hover  .numbers,
 .cardBox .card:hover  .cardName,
 .cardBox .card:hover  .iconBox{
-    color:white;
+    color:rgb(202, 197, 58);
+   
+    
+    
 
-}
+} 
 
 /* Responsive */
 
